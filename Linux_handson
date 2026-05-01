@@ -1,1 +1,23 @@
 
+#File_and_Director_Operations_Commands
+
+| Command | Simple Definition                      | Common Flags                                                 | Use Case                          |
+| ------- | -------------------------------------- | ------------------------------------------------------------ | --------------------------------- |
+| `pwd`   | Prints current working directory       | `-P` (physical path)                                         | Check where you are in filesystem |
+| `ls`    | Lists files and directories            | `-l` (long list), `-a` (hidden files), `-h` (human readable) | View folder contents              |
+| `cd`    | Changes directory                      | `cd ..` (parent), `cd ~` (home)                              | Navigate between folders          |
+| `mkdir` | Creates directory                      | `-p` (create parent dirs)                                    | Create new folders                |
+| `rmdir` | Removes empty directory                | None commonly used                                           | Delete empty folders              |
+| `rm`    | Removes files or directories           | `-r` (recursive), `-f` (force), `-i` (interactive)           | Delete files/folders              |
+| `touch` | Creates empty file / updates timestamp | None commonly used                                           | Create new file quickly           |
+| `cp`    | Copies files/directories               | `-r` (recursive), `-i` (prompt), `-v` (verbose)              | Duplicate files/folders           |
+| `mv`    | Moves or renames files/directories     | `-i`, `-v`                                                   | Rename or move files              |
+| `cat`   | Displays file content                  | `-n` (line numbers)                                          | View small files                  |
+| `less`  | View file page by page                 | `-N` (line numbers)                                          | Read large files                  |
+| `head`  | Shows first lines of file              | `-n` (number of lines)                                       | Preview file start                |
+| `tail`  | Shows last lines of file               | `-n`, `-f` (live log)                                        | Monitor logs                      |
+| `find`  | Search files/directories               | `-name`, `-type`, `-size`                                    | Locate files in system            |
+| `chmod` | Changes file permissions               | `-R` (recursive)                                             | Set read/write/execute access     |
+| `chown` | Changes file owner                     | `-R`                                                         | Change file ownership             |
+| `tree`  | Shows directory structure              | `-L` (depth level)                                           | Visualize folder hierarchy        |
+
