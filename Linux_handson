@@ -124,6 +124,124 @@ Network
 | `arp`         | Shows IP-to-MAC mapping                  | `-a`                    | Diagnose LAN issues               |
 | `tcpdump`     | Captures network packets                 | `-i`, `-n`, `-c`        | Packet-level network debugging    |
 | `nc` (netcat) | Reads/writes network connections         | `-l`, `-v`, `-z`        | Test ports, create simple servers |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Shortcut           | Simple Definition                     | Use Case                                  |
+| ------------------ | ------------------------------------- | ----------------------------------------- |
+| `Ctrl + C`         | Stop current running command          | Kill hanging process in terminal          |
+| `Ctrl + Z`         | Suspend current process               | Send process to background (paused state) |
+| `Ctrl + D`         | Exit terminal / end input             | Logout or close shell session             |
+| `Ctrl + L`         | Clear screen                          | Clean terminal view (like `clear`)        |
+| `Ctrl + A`         | Move cursor to beginning              | Edit command quickly                      |
+| `Ctrl + E`         | Move cursor to end                    | Jump to end of command                    |
+| `Ctrl + U`         | Delete line before cursor             | Clear typed command quickly               |
+| `Ctrl + K`         | Delete line after cursor              | Remove remaining command text             |
+| `Ctrl + W`         | Delete previous word                  | Fast text editing                         |
+| `Ctrl + R`         | Search command history                | Find previous commands                    |
+| `Ctrl + G`         | Exit search mode                      | Cancel reverse search                     |
+| `!!`               | Repeat last command                   | Re-run previous command                   |
+| `!n`               | Run command number n from history     | Execute specific history command          |
+| `!string`          | Run last command starting with string | Quick command recall                      |
+| `Tab`              | Auto-complete command/file            | Speed up typing, avoid errors             |
+| `Ctrl + Shift + C` | Copy selected text                    | Copy in terminal                          |
+| `Ctrl + Shift + V` | Paste text                            | Paste into terminal                       |
+
+_--------------------------------------------------------------------------------------------------------------------------------------
+
+There are several common ways to access a Linux server, depending on where it is hosted (local machine, cloud VM like Azure/AWS, or on-prem server). Here are the main methods:
+
+---
+
+## 1. SSH (Most common method)
+
+This is the standard way to access Linux remotely.
+
+* Tool: OpenSSH
+* Command:
+
+```bash
+ssh username@ip-address
+```
+
+Example:
+
+```bash
+ssh azureuser@52.x.x.x
+```
+
+* Uses port 22 by default
+* Secure and widely used in DevOps, cloud, and system administration
+
+---
+
+## 2. PuTTY (Windows GUI SSH client)
+
+* Tool: PuTTY
+* You enter:
+
+  * Host IP
+  * Username
+  * Private key (.ppk file if required)
+
+Good for users who don’t prefer terminal commands.
+
+---
+
+## 3. Cloud Console Access (Browser-based)
+
+If your Linux server is in cloud:
+
+* Azure: Azure Portal → “Connect”
+* AWS: EC2 Instance Connect / Session Manager
+* GCP: Browser SSH button
+
+Example:
+Microsoft Azure provides “SSH in browser” directly from portal.
+
+---
+
+## 4. RDP (Rare for Linux, but possible)
+
+* Usually used for Windows, but Linux with GUI can support it
+* Requires xRDP installed on Linux
+
+---
+
+## 5. Serial / Console Access
+
+Used when SSH is broken or server is unreachable.
+
+* Cloud providers offer “Serial Console”
+* Useful for recovery and debugging
+
+---
+
+## 6. VPN + SSH (Enterprise setup)
+
+* Connect VPN first
+* Then SSH into private IP of server
+* Used in secure corporate networks
+
+---
+
+## 7. Bastion Host (Jump Server)
+
+* You SSH into a secure intermediate server first
+* Then access private Linux machines
+* Common in production environments
+
+---
+
+## Quick summary
+
+* Everyday use → SSH (OpenSSH)
+* Windows users → PuTTY
+* Cloud servers → Portal SSH / Console
+* Enterprise security → VPN + Bastion
+
+---
+
+
+
 
 
 
