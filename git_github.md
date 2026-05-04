@@ -6,7 +6,8 @@ git --version
 
 If not installed:
 
-* Download from:
+* Download from: Win;Powershell:  winget install --id Git.Git -e --source winget
+* Linux : sudo apt install git -y
 
 ---
 
