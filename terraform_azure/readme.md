@@ -1,5 +1,11 @@
 <image src= "<img width="1425" height="792" alt="Screenshot 2026-05-05 165302" src="https://github.com/user-attachments/assets/3e13a279-75cb-480b-a67a-01e69668631c" />
 
+
+
+
+<img width="1460" height="892" alt="WhatsApp Image 2026-05-05 at 21 29 47" src="https://github.com/user-attachments/assets/49cf41de-9d3d-4702-bdca-5d84d8b98c50" />
+
+
 This diagram shows the **Azure resources required before a Virtual Machine (VM) can run**.
 The creation flow is usually:
 
